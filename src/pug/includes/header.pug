@@ -1,0 +1,14 @@
+-
+    var tabs = [
+    {text:'Home',id:'0'},
+    {text:'Skills',id:'1'},
+    {text:'Contact',id:'2'}
+    ]
+
+.nav
+    .logo 
+        .name aurav 
+    .link
+        each tab in tabs
+            li
+                .tab(id=tab.id)=tab.text
