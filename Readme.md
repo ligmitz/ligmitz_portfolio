@@ -4,5 +4,5 @@
 ## The technologies used are:
 ### Webpack - For managing and bundling the modules and javascript 
 ### Less - For easy css use
-### Pug - As a better technology alternative to HTMl
+### Pug - As a better technology alternative to HTML
 
