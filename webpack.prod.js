@@ -46,6 +46,17 @@ module.exports = {
                 use: ['html-loader','pug-html-loader']
             },
             {
+                test: /\.mp4$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'vids'
+                    }
+                }
+            }
+            ,
+            {
                 test: /\.(svg|png|jpg|gif)/,
                 use: {
                     loader: 'file-loader',

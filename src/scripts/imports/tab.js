@@ -6,6 +6,6 @@ export function tab_handle(id){
         tabs[i].classList.remove('active');
         tabcontent[i].style.display = 'none';
     }
-    tabcontent[id].style.display = 'flex';
+    tabcontent[id].style.display = 'block';
     tabs[id].classList.add('active');
 }
