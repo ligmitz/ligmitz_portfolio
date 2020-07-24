@@ -1,0 +1,27 @@
+-
+    var projects = [
+        {
+            'title': 'My first project',
+            'author': 'ligmitz',
+            'link': '',
+            'descriptor': 'This is a project.',
+        },
+                {
+            'title': 'My secod project',
+            'author': 'ligmitz',
+            'link': '',
+            'descriptor': 'This is a also a project.',
+        }
+    ]
+
+
+center
+    .cards
+        each project in projects
+            .card
+                .header
+                    .title
+                        a(href=project.link)=project.title
+                    .author=project.author
+                hr
+                .descriptor=project.descriptor

@@ -1,0 +1,44 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    .card{
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 20px;
+        padding: 15px;
+        width: 40%;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+            padding: 5px;
+            width: 100%;
+            .title{
+                text-align: left;
+                float: left;
+                a{
+                    text-decoration: none;
+                    float: left;
+                }
+            }
+            .author{
+                float: right;
+                text-align: rights;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .cards{
+        width: 90%;
+        .card{
+            width: 100%;
+        }
+    }
+}
