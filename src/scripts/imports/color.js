@@ -10,6 +10,5 @@ export function set_color(){
         var item_color = color_picker();
         cards[i].style.color = item_color;
         cards[i].querySelector('.header .title a').style.color = item_color;
-        cards[i].querySelector('hr').style.color = item_color;
     }
 }
