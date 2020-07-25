@@ -22,16 +22,19 @@
     }
     .mask{
         margin-top: 1.5%;
-        min-height: 60vh;
-        width: 40%;
-        position: relative;
+        height: 60vh;
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        // overflow: hidden;
         img{
             width: 100%;
             height: 100%;
-            object-fit: fill;
-            position: absolute;
-            top: 0;
-            left: 0;
+            // object-fit: fill;
+            // position: relative;
+            // top: 0;
+            // left: 0;
+            // overflow-y: hidden;
             z-index: 1;
 
         }
@@ -54,7 +57,7 @@
     }
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 800px){
     #home{
         .typewriter{
             h2{
@@ -66,8 +69,9 @@
             }
         }
         .mask{
-            height: 20%;
+            height: 50%;
             width: 100%;
+            overflow: hidden;
         }
     }
 }
