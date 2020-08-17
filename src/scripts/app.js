@@ -13,4 +13,8 @@ window.addEventListener('load',()=>{
     tabs[0].click();
 
     create_cards();
+
+    document.getElementById('arrow').addEventListener( "click", () => {
+        document.getElementById('swipe').classList.toggle('swipein');
+    })
 })
