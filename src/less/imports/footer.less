@@ -1,0 +1,84 @@
+#footer{
+    position: fixed;
+    right: 20%;
+    top: 90%;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+        
+        .swipe{
+            display: flex;
+            flex-direction: row;
+            transition-timing-function: ease-out;
+            transition-property: visibility, transform;
+            transition-duration: 0s, 0.5s;
+            .border{
+                width: 45px;
+                height: 45px;
+                background-color: #9381ff;
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+            }
+            .icons{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-right: -20px;
+                height: 45px;
+                width: 400px;
+                background-color: #9381ff;
+                a{
+                    color: white;
+                    i{
+                        margin-top: 8px;
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+
+        .arrow{
+            position: relative;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            transform: rotate(-90deg);
+            color: white;
+            background-color: #b8b8ff;
+            border: 1px solid #333333;
+            box-shadow: 0 0 5px #101010;
+            i{
+                position: absolute;
+                top: 30%;
+                left: 30%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    #footer{
+        position: fixed;
+        right: 2%;
+        top: 90%;
+
+        .container{
+            .swipe{
+                .icons{
+                    width: 280px;
+                    i{
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swipein{
+    visibility: hidden;
+    transform: translateX(100%);
+}
