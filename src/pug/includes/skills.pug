@@ -1,0 +1,68 @@
+-
+    var skills = [
+        {
+            src: "../assets/imgs/skills/jade.svg",
+            title: "Pug- HTML template engine"
+        },
+        {
+            src: "../assets/imgs/skills/less.png",
+            title: "Less - Dynamic stylesheet language"
+        },
+        {
+            src: "../assets/imgs/skills/Nodejs.svg",
+            title: "Nodejs - JS Run-time environment"
+        },
+        {
+            src: "../assets/imgs/skills/MongoDB.jpg",
+            title: "MongoDB - NoSQL database"
+        },
+        {
+            src: "../assets/imgs/skills/react.png",
+            title: "Reactjs - Javascript Framework"
+        },
+        {
+            src: "../assets/imgs/skills/express.png",
+            title: "Express - Backend JS Framework"
+        },
+        {
+            src: "../assets/imgs/skills/django.png",
+            title: "Django - Web Framework"
+        },
+        {
+            src: "../assets/imgs/skills/photoshop.png",
+            title: "Photoshop - Graphics Editor"
+        },
+        {
+            src: "../assets/imgs/skills/inkscape.png",
+            title: "Inkscape - Vector Graphics Editor"
+        },
+        {
+            src: "../assets/imgs/skills/webpack.png",
+            title: "Webpack - JS module bundler"
+        },
+        {
+            src: "../assets/imgs/skills/kubernetes.png",
+            title: "Kubernetes - Container Orchestration system"
+        },
+        {
+            src: "../assets/imgs/skills/git.png",
+            title: "Git - Version control system"
+        },
+        {
+            src: "../assets/imgs/skills/graphql.png",
+            title: "Graphql - Data Query Language"
+        },
+        {
+            src: "../assets/imgs/skills/jquery.png",
+            title: "JQuery - Javascript library"
+        },
+    ]
+
+#skills
+    center
+        .container
+            each skill in skills
+                .box
+                    .image
+                        img(src=skill.src)
+                    .desc=skill.title

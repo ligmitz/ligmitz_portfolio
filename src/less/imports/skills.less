@@ -1,0 +1,46 @@
+#skills{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        .box{
+            padding: 15px;
+            color: #FEFAE0;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 3%;
+            margin-bottom: 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .image{
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+                object-fit: cover;
+                img{
+                    max-width: 200px;
+                    height: 150px;
+                }
+            }
+            .desc{
+                font-size: large;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media (max-width: 680px){
+        .container{
+            .box{
+                .image{
+                    img{
+                        max-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
